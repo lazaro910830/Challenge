@@ -20,6 +20,7 @@
 		CB36EDC529BE5AE3004D5D5B /* FullResultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB36EDC429BE5AE3004D5D5B /* FullResultManager.swift */; };
 		CB36EDCE29BEC92B004D5D5B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB36EDCD29BEC92B004D5D5B /* BaseViewController.swift */; };
 		CB3E84ED29C36DCF0061CF56 /* SearchViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3E84EC29C36DCF0061CF56 /* SearchViewControllerTests.swift */; };
+		CB3E84EF29C558750061CF56 /* DetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3E84EE29C558750061CF56 /* DetailViewControllerTests.swift */; };
 		CB58AC8E29BE04B70094C775 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB58AC8D29BE04B70094C775 /* AppDelegate.swift */; };
 		CB58AC9029BE04B70094C775 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB58AC8F29BE04B70094C775 /* SceneDelegate.swift */; };
 		CB58AC9229BE04B70094C775 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB58AC9129BE04B70094C775 /* SearchViewController.swift */; };
@@ -68,6 +69,7 @@
 		CB36EDC429BE5AE3004D5D5B /* FullResultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullResultManager.swift; sourceTree = "<group>"; };
 		CB36EDCD29BEC92B004D5D5B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		CB3E84EC29C36DCF0061CF56 /* SearchViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewControllerTests.swift; sourceTree = "<group>"; };
+		CB3E84EE29C558750061CF56 /* DetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControllerTests.swift; sourceTree = "<group>"; };
 		CB58AC8A29BE04B70094C775 /* MercadoLibre.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MercadoLibre.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB58AC8D29BE04B70094C775 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB58AC8F29BE04B70094C775 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 			children = (
 				CBA5B0A529C35CC7000551A1 /* SearchManagerTest.swift */,
 				CB3E84EC29C36DCF0061CF56 /* SearchViewControllerTests.swift */,
+				CB3E84EE29C558750061CF56 /* DetailViewControllerTests.swift */,
 			);
 			path = MercadoLibreTests;
 			sourceTree = "<group>";
@@ -490,6 +493,7 @@
 			files = (
 				CB3E84ED29C36DCF0061CF56 /* SearchViewControllerTests.swift in Sources */,
 				CBA5B0A629C35CC7000551A1 /* SearchManagerTest.swift in Sources */,
+				CB3E84EF29C558750061CF56 /* DetailViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
