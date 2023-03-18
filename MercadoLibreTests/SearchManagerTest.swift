@@ -11,22 +11,20 @@ import XCTest
 final class SearchManagerTest: XCTestCase {
     
     var sut: SearchManager!
-    var delegate: SearchManagerTestDelegate!
     var search = "https://api.mercadolibre.com/sites/MLA/search?q=Ollas"
 
     override func setUpWithError() throws {
-        sut = SearchManager(delegate: delegate)
+        sut = SearchManager()
     }
 
     override func tearDownWithError() throws {
-        delegate = nil
         sut = nil
     }
 
     func test_PerformRequest() throws {
         let expLoadingData = expectation(description: "loading")
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
             expLoadingData.fulfill()
         }
         
@@ -38,26 +36,4 @@ final class SearchManagerTest: XCTestCase {
         
     }
 
-}
-
-class SearchManagerTestDelegate: SearchManagerDelegate {
-    var didUpdateSearchWasCalled = false
-    var loadingViewWasCalled = false
-    var showErrorWasCalled = false
-    var expDidUpdateSearchWasCalled: XCTestExpectation?
-    
-    func didUpdateSearch(_ searchrManager: MercadoLibre.SearchManager, result: [MercadoLibre.ResultModel], paging: MercadoLibre.Paging) {
-        didUpdateSearchWasCalled = true
-        expDidUpdateSearchWasCalled?.fulfill()
-    }
-    
-    func loadingView(_ state: MercadoLibre.LoadingViewState) {
-        loadingViewWasCalled = true
-    }
-    
-    func showError(_ error: String, completion: (() -> Void)?) {
-        showErrorWasCalled = true
-    }
-    
-    
 }
